@@ -15,7 +15,7 @@ export default class Character {
 
     const types = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
 
-    if (types.includes(type) === false) {
+    if (!types.includes(type)) {
       throw new Error('Значение type должно содержать одно из типов: Bowman, Swordsman, Magician, Daemon, Undead, Zombie');
     }
   }

@@ -1,15 +1,9 @@
-import Character from './app';
+import Character from './Character';
 
 export default class Undead extends Character {
-  constructor(name, type) {
+  constructor(name, type = 'Undead') {
     super(name, type);
-    this.type = 'Undead';
     this.attack = 25;
     this.defence = 25;
   }
 }
-
-const undead1 = new Undead('Undead1', 'Undead');
-
-// eslint-disable-next-line no-console
-console.log(undead1);
